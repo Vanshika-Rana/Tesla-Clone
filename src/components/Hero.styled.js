@@ -14,7 +14,7 @@ export const Wrap = styled.div`
     background-color: #f5f5f5;
 `;
 export const TextGroup = styled.div`
-    padding-top: 13vh;
+    padding-top: 16vh;
     text-align: center;
 `;
 export const Heading = styled.h1`
@@ -23,7 +23,7 @@ export const Heading = styled.h1`
     font-weight: 600;
 `;
 export const Subheading = styled.h2`
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding-top: 0.5rem;
     color: #333;
     font-weight: 500;
@@ -43,15 +43,19 @@ export const ButtonGroup = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 40%;
-    margin-bottom: 1.2rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    @media (max-width: 600px) {
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
 
 `;
 export const LeftButton = styled.button`
     background-color: rgba(0,0,0,0.7);
     color: #fff;
     border: none;
-    
     border-radius: 3rem;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
@@ -59,9 +63,13 @@ export const LeftButton = styled.button`
     text-transform: uppercase;
     letter-spacing: 0.05rem;
     font-weight: 600;
-    width: 40%;
+    width: 270px;
     margin-right: 1rem;
     cursor: pointer;
+    @media (max-width: 600px) {
+        width: 400px;
+        margin-bottom: 1rem;
+    }
 `;
 
 export const RightButton = styled(LeftButton)`

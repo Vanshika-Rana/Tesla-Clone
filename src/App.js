@@ -1,8 +1,11 @@
 import Hero from "./components/Hero";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
+      
+      <Header />
       <Hero
         bgimg="model-3.jpg"
         heading="Model 3"
