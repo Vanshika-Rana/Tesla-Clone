@@ -1,4 +1,5 @@
 import React , {useState}from 'react'
+
 import {
     Container,
 Logo,
@@ -33,6 +34,7 @@ const Header = () => {
                 <SidebarItem onClick={() => setSidebarSTATUS(true)}>Menu</SidebarItem>
                 
             </Menu>
+            
             <Sidebar open={sidebarSTATUS}>
                 <CloseWrapper onClick={() => setSidebarSTATUS(false)}>
                     <img src="/images/close.png" alt="menu"width="15" height="15" />
@@ -58,6 +60,7 @@ const Header = () => {
                 
                 
             </Sidebar>
+            
         </Container>
     )
 }

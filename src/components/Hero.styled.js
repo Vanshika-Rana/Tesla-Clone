@@ -44,7 +44,7 @@ export const ButtonGroup = styled.div`
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
     @media (max-width: 600px) {
         align-items: center;
         width: 100%;
@@ -53,7 +53,7 @@ export const ButtonGroup = styled.div`
 
 `;
 export const LeftButton = styled.button`
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.8);
     color: #fff;
     border: none;
     border-radius: 3rem;

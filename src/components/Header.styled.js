@@ -51,7 +51,7 @@ export const Sidebar = styled.div`
     bottom:0;
     display: flex;
     flex-direction: column;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.8s ease-in-out;
     transform: ${props => props.open ? 'translateX(0)' : 'translateX(100%)'};
     z-index: 100;
     li{

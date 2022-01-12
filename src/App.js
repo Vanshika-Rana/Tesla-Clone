@@ -1,11 +1,13 @@
 import Hero from "./components/Hero";
 import Header from "./components/Header";
-
+import Footer from "./components/Footer";
+import ReactScrollJacker from "react-scroll-jacker";
 function App() {
   return (
     <div className="App">
-      
       <Header />
+      
+         
       <Hero
         bgimg="model-3.jpg"
         heading="Model 3"
@@ -15,6 +17,8 @@ function App() {
         rightbuttonText="Existing Inventory"
         imgsrc="/images/down-arrow.png"
       />
+     
+     
       <Hero
         bgimg="model-y.jpg"
         heading="Model Y"
@@ -64,6 +68,10 @@ function App() {
         leftbuttonText="Shop Now"
 
       />
+      
+      <Footer />
+          
+      
     </div>
   );
 }
